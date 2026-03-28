@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     default: "LOGO — Fashion, Electronics & More",
     template: "%s | LOGO",
   },
+  icons: {
+    icon: "/Logo.png",
+    shortcut: "/Logo.png",
+    apple: "/Logo.png",
+  },
   description:
     "Shop the latest fashion, electronics, jewellery and more at LOGO. Free shipping on orders over $50.",
   metadataBase: new URL(
