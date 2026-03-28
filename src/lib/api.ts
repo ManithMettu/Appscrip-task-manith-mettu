@@ -1,9 +1,13 @@
 import axios from "axios";
 import type { Product } from "@/types/product";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "https://fakestoreapi.com";
+
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
-  timeout: 10000,
+  baseURL: BASE_URL,
+  timeout: 15000,
+  headers: { "Content-Type": "application/json" },
 });
 
 export async function fetchProducts(): Promise<Product[]> {
