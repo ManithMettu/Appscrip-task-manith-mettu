@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import { fetchProducts, fetchCategories } from "@/lib/api";
 import Header from "@/components/Header";
